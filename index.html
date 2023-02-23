@@ -28,19 +28,19 @@
             <!-- Apply justify Content to make the paticulars move to right side -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">About Me</a>
+                      <a class="nav-link active" href="#about">About Me</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">Skills and Experience</a>
+                      <a class="nav-link active" href="#edu">Skills and Experience</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">My Resume</a>
+                      <a class="nav-link active" href="#skills">My Resume</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">Contact Me</a>
+                      <a class="nav-link active" href="#contact">Contact Me</a>
                     </li>
                 </ul>
           </div>
@@ -55,12 +55,12 @@
             <!-- The screen is divided into 12 so we can divide into any no.of coloums but should meet 12 -->
             <div class="col-md-8">
               <h4 class="promo-title">Hello, This is</h4>
-              <div class="text-1">Pran</div>
+              <div class="text-1">Pranathi Perumalla</div>
               <div class="text-2">And I Am <span class="bc">Junior Developer</span></div>
-              <button  type="button" class="btn">Hire Me</button>
+              <a href="https://www.linkedin.com/in/pranathi-perumalla/" target="_blank"><button  type="button" class="btn">Connect With Me</button></a>
             </div>
             <div class="col-md-4 img-section">
-              <img src="Images/Competitive intelligence-amico.png"  alt="" class="img-fluid site-img">
+              <img src="images/Competitive intelligence-amico.png"  alt="" class="img-fluid site-img">
             </div>
           </div>
         </div>
@@ -100,10 +100,10 @@
                   </tbody>
                 </table>
 		          </ul>
-              <button class="btn">Download CV</button>
+              <a href="https://drive.google.com/file/d/1mEGbKNkHMkslVAhG5z3o-xTwS4BXDk2H/view?usp=sharing" target="_blank"><button class="btn">Download CV</button></a>
             </div>
             <div class="col-md-4 img-section">
-              <img src="Images/Creative thinking-bro.png" alt="" class="img-fluid site-img">
+              <img src="images/Creative thinking-bro.png" alt="" class="img-fluid site-img">
             </div>
           </div>
         </div>
@@ -196,7 +196,7 @@
           <p class="p-2">My Experience in the Experienced World</p>
           <div class="col-md-4">
             <div class="card exp-card-1">
-              <img src="Images/Mobile Marketing-pana.png" class="card-img-top img-responsive img-fluid" alt="...">
+              <img src="images/Mobile Marketing-pana.png" class="card-img-top img-responsive img-fluid" alt="...">
               <div class="card-body">
                 <h4 class="card-title bc">July 2022-Present</h4>
                 <h5>Head Of Promotions, Sponsorship and Marketing</h5>
@@ -214,7 +214,7 @@
           </div>
           <div class="col-md-4">
             <div class="card exp-card-2" >
-              <img src="Images/Freelancer-bro.png" class="card-img-top img-responsive img-fluid" alt="...">
+              <img src="images/Freelancer-bro.png" class="card-img-top img-responsive img-fluid" alt="...">
               <div class="card-body">
                 <h4 class="card-title bc">March 2022-Jan 2023</h4>
                 <h5>Junior Developer</h5>
@@ -233,7 +233,7 @@
           </div>
           <div class="col-md-4">
             <div class="card exp-card-3">
-              <img src="Images/Blog post-bro.png" class="card-img-top img-responsive img-fluid" alt="...">
+              <img src="images/Blog post-bro.png" class="card-img-top img-responsive img-fluid" alt="...">
               <div class="card-body">
                 <h4 class="card-title bc">July 2021-Jan 2023</h4>
                 <h5>Content Writer</h5>
@@ -291,27 +291,31 @@
       
    <!-- Contact Me -->
       <section id="contact">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row mb">
-            <h1 class="text-center">Get In Touch</h1>
-            <div class="col-6 mt-2">
-              <img src="Images/Messaging fun-pana.png" alt="" class="img-fluid img-responsive site-img">
+            
+            <div class="col-6 text-center">
+              <img src="images/Messaging fun-pana.png" alt="" class="img-fluid img-responsive site-img">
             </div>
-            <div class="col-6 mt-2">
-              <form action="">
-                <h3>Messege Me</h3>
-                <input type="text" id="name" name="name" placeholder="Your Name Please">
-                <span><span></span></span>
-                <input type="email" id="email" name="email" placeholder="Your Email Please">
-                <br><br>
-                <input type="text" name="sub" id="sub" placeholder="Subject">
-                <br><br>
-                <textarea name="text" id="" placeholder="Your Message"></textarea>
-                <a href="https://www.linkedin.com/in/pranathi-perumalla/"><i class="bi bi-linkedin"></i></a>
+            <div class="col-6">
+              <form action="https://formsubmit.co/pranathiperumalla.18@gmail.com" method="post">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your Good Name Please">
+                </div>
+                <div class="mb-3">
+                  <label for="mail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" name="mail" id="mail" placeholder="name@gmail.com">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea class="form-control" id="message" rows="3" name="message" placeholder="Wanna talk? then text me na!"></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
               </form>
-             
             </div>
           </div>
+        </div>
       </section>
 </body>
 </html>

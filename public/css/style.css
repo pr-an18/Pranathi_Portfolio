@@ -8,7 +8,7 @@
 }
 body
 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     background: black !important;
     color: antiquewhite !important;
 }
@@ -185,4 +185,8 @@ body
 #contact
 {
     padding: 5%;
+}
+.form input
+{
+    
 }
