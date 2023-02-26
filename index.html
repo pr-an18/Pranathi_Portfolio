@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pranathi Perumalla</title>
     <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css”/>
-    <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css” />    
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="s" href="public/js/bootstrap.min.js">
+    <script src="public/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
 
         <!-- Navbar Toggler -->
 
-          <a class="navbar-brand" href="#">Pranathi <span>Perumalla.</span></a>
+          <a class="navbar-brand" href="/">Pranathi <span>Perumalla.</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -200,7 +200,7 @@
               <div class="card-body">
                 <h4 class="card-title bc">July 2022-Present</h4>
                 <h5>Head Of Promotions, Sponsorship and Marketing</h5>
-                <h6 class="bc">Centre for Inovation and Entreprenuership</h6>
+                <a href="https://mlritcie.in/" target="_blank"><h6 class="bc">Centre for Inovation and Entreprenuership</h6></a>
                 <p class="card-text">Working as a promotions and sponsorship lead at MLRIT-CIE is a rewarding experience. We conduct national events and promote our events around 40+ colleges 
                  , the scale of promotions or sponsorship is determined by the size of the events we host.</p>
               </div>
@@ -218,7 +218,7 @@
               <div class="card-body">
                 <h4 class="card-title bc">March 2022-Jan 2023</h4>
                 <h5>Junior Developer</h5>
-                <h6 class="bc">Kalai Logic Info-Tech</h6>
+                <a href="https://www.kalai.info/" target="_blank"><h6 class="bc">Kalai Logic Info-Tech</h6></a>
                 <p class="card-text">It's been a pleasure working with Kalai. Worked as an intern for two months before being upgraded to part-time employment. 
                   I learned more in-depth information and even invested my knowledge in the company's growth.</p>
               </div>
@@ -237,8 +237,8 @@
               <div class="card-body">
                 <h4 class="card-title bc">July 2021-Jan 2023</h4>
                 <h5>Content Writer</h5>
-                <h6 class="bc">Kalai Logics Info-Tech</h6>
-                <h6 class="bc">Centre for Inovation and Entreprenuership</h6>
+                <a href="https://www.kalai.info/" target="_blank"><h6 class="bc">Kalai Logic Info-Tech</h6></a>
+                <a href="https://mlritcie.in/" target="_blank"><h6 class="bc">Centre for Inovation and Entreprenuership</h6></a>
                 <p class="card-text">As a content writer, I thoroughly enjoyed the process of learning and rendering all the words required to create amazing content.</p>
               </div>
               <ul class="exp-ul">
@@ -291,30 +291,39 @@
       
    <!-- Contact Me -->
       <section id="contact">
-        <div class="container-fluid">
-          <div class="row mb">
-            
-            <div class="col-6 text-center">
+        <div class="row">
+          <div class="col text-center">
+            <h1>Contact Me</h1>
+            <p>How can you reach me</p>
+          </div>
+        </div>
+         <div class="row"> 
+            <div class="col text-center">
               <img src="images/Messaging fun-pana.png" alt="" class="img-fluid img-responsive site-img">
             </div>
-            <div class="col-6">
-              <form action="https://formsubmit.co/pranathiperumalla.18@gmail.com" method="post">
-                <div class="mb-3">
-                  <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Your Good Name Please">
+            <div class="col-md-6">
+              <form action="https://formsubmit.co/pranathiperumalla.18@gmail.com" class="p-4 p-md-5 contact-form" method="POST" onsubmit="alert('Your Message Has been reached to me!!')">
+                <input type="hidden" name="_subject" value="Wooh! new message">
+                <input type="hidden" name="_template" value="box">
+                <div class="form-group">
+                  <input type="name" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
-                <div class="mb-3">
-                  <label for="mail" class="form-label">Email address</label>
-                  <input type="email" class="form-control" name="mail" id="mail" placeholder="name@gmail.com">
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control" placeholder="Email Address" required>
                 </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label">Your Message</label>
-                  <textarea class="form-control" id="message" rows="3" name="message" placeholder="Wanna talk? then text me na!"></textarea>
+                <div class="form-group">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
                 </div>
-                <button type="submit" class="btn">Send</button>
+                <div class="form-group">
+                  <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Send Message" class="btn py-3 px-5">
+                </div>
+                <input type="hidden" name="_next" value="https://pr-an18.github.io/Pranathi_Portfolio/">
+                <input type="hidden" name="_autoresponse" value="Hello!! Thank you for taking time. will get back to you soon">
               </form>
             </div>
-          </div>
         </div>
       </section>
 </body>

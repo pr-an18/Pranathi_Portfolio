@@ -186,7 +186,12 @@ body
 {
     padding: 5%;
 }
-.form input
+.form-group
 {
-    
+    display: flex;
+    margin: 3% !important;
+}
+a
+{
+    text-decoration: none !important;
 }
